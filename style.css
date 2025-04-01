@@ -1,12 +1,11 @@
 /* Parent Element (Flex Container) */
-.container {
+.container1 {
     display: flex;
     /* Enables Flexbox */
    
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: space-evenly;
+    flex-direction:row;
+    align-items:flex-end ;
     align-content: center;
     
     
@@ -19,7 +18,25 @@
     padding: 20px;
     background-color: cyan;
   }
+  .container2 {
+    display: flex;
+    /* Enables Flexbox */
+   
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-items:flex-end ;
+    align-content: center;
+    
+    
+    gap: 10px;
+    /* Space between flex items */
 
+    border: 2px solid black;
+    /* Just for visualization */
+
+    padding: 20px;
+    background-color: cyan;
+  }
   /* Child Elements (Flex Items) */
   .item {
     background-color: rgb(85, 240, 64);
@@ -28,7 +45,7 @@
     border: 5px solid red;
     /* Makes all items share available space equally */
     text-align: center;
-  }
+  } 
 
   /* Making one child different to show flexibility */
   .item:nth-child(2) {
